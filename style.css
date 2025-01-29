@@ -1,0 +1,234 @@
+.navbar-container {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Full black background for the navbar */
+    width: 100%; /* Spans the entire width of the page */
+}
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    background-color: black; /* Background color for the navbar */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Distribute menu items evenly */
+    
+}
+
+.navbar li {
+    flex: 1; /* Make each <li> take up equal space */
+    text-align: center; /* Center-align text inside each item */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 15px 0; /* Vertical padding for better spacing */
+    display: block; /* Make the <a> fill the entire <li> */
+    width: 100%; /* Ensure it spans the full width of the parent <li> */
+    height: 100%; /* Ensure it spans the full height of the parent <li> */
+    font-size: 20px; /* Increase the font size */
+    line-height: 1.5; /* Adjust line height for vertical alignment */
+    background-color: black; /* Same as navbar background to ensure consistency */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    
+}
+
+.navbar a:hover {
+    background-color: darkgray; /* Highlight the entire box on hover */
+}
+/* Reset body but maintain styling for other sections */
+body {
+    margin: 0; /* Remove all default margins */
+    padding: 0; /* Remove all default padding */
+}
+
+/* Optional: Ensure the main content has its own padding */
+main {
+    padding: 20px;
+    background-color: white; /* Example background for the main content */
+}
+
+.image-text-container {
+    display: flex; /* Flexbox for image and text alignment */
+    align-items: center; /* Center image and text vertically */
+    justify-content: space-between; /* Space out image and text */
+    width: 80%; /* Set the container width to 80% of the page */
+    margin: 0 auto; /* Center the container with equal left and right margins */
+    padding: 20px; /* Optional: Add padding inside the box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    border-radius: 10px; /* Optional: Rounded corners for the box */
+    gap:5%;
+
+}
+
+/* Style for the image */
+.image {
+    flex: 1; /* Allow the image to take up flexible space */
+    max-width: 30%; /* Limit the image to 40% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Style for the text */
+.text {
+    flex: 1; /* Allow the text to take up flexible space */
+    font-size: 16px; /* Set a readable font size */
+    line-height: 1.6; /* Improve text readability */
+    text-align: left; /* Align the text to the left */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .image {
+        max-width: 100%; /* Allow the image to take full width */
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+
+    .text {
+        text-align: center; /* Center-align text */
+    }
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+    max-width: 100%; /* Ensures the image resizes within its container */
+    height: auto; 
+}
+
+
+
+.fun-fact-wrapper {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.fun-fact-container {
+    max-width: 750px; /* Limit the width for readability */
+    padding: 0; /* Remove inner padding */
+    margin: 0 auto; /* Center horizontally */
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove the shadow */
+}
+
+.fun-fact-title {
+    text-align: center; /* Center the title horizontally */
+    font-weight: bold; /* Keep bold styling */
+    font-size: 1.5em; /* Larger font size for emphasis */
+    margin: 0; /* Remove default margin to eliminate extra spacing */
+}
+
+.fun-fact-content {
+    text-align: justify; /* Justify the main content text */
+    margin-top: 0; /* Ensure no gap between title and content */
+}
+/* Styling for links */
+.fun-fact-content a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline for links */
+}
+
+.fun-fact-content a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 450px;
+}
+
+.robosaurus-video {
+    width: 575px;
+}
+
+.did-you-know-container {
+    display: flex;           /* Flexbox for alignment */
+    align-items: center;     /* Vertically center items */
+    justify-content: space-between; /* Evenly space out image and text */
+    width: 80%;              /* 80% width of the page for consistent margins */
+    margin: 0 auto;          /* Center the container on the page */
+    padding: 20px;           /* Add padding inside the container */
+    box-sizing: border-box;  /* Include padding in the width */
+    gap: 5%;                 /* Add consistent spacing between items */
+}
+
+.footer-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    color: white; 
+    background-color: black; 
+    font-size: large;
+}
+
+.footer-copyright{
+    flex: 1; 
+    text-align: left; 
+    padding: 0 20px;
+}
+
+
+:root {
+    --link-color: white;
+    --link-hover-bg: rgba(255, 255, 255, 0.2);
+    --link-hover-color: black;
+}
+
+.footer-navigation {
+    display: flex; /* Use Flexbox for spacing */
+    justify-content: center; /* Center-align the links */
+    gap: 25px; /* Add a 25px gap between links */
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+}
+
+.footer-navigation a {
+    display: inline-block;
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-navigation a:hover {
+    color: var(--link-hover-color);
+    transform: scale(1.05); /* Slight zoom effect for modern touch */
+}
+
+.footer-social-media{
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 20px; 
+    padding: 0 20px;
+    flex-wrap: wrap;
+
+}
+
+
+/* Style for the right-side image */
+.image-right {
+    flex: 1; /* Allow the image to take up flexible space */
+    max-width: 30%; /* Limit the image to 30% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Style for the left-side text */
+.text-left {
+    flex: 1; /* Allow the text to take up flexible space */
+    font-size: 16px; /* Set a readable font size */
+    line-height: 1.6; /* Improve text readability */
+    text-align: left; /* Align the text to the left */
+}
