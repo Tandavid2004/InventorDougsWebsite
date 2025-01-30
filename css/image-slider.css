@@ -276,3 +276,61 @@
         max-width: 100%;
     }
 }
+
+
+/* Home Button Styles */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(32, 32, 34, 0.8); /* Match slider navigation button color */
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: rgba(50, 50, 53, 0.8); /* Match hover effect of slider buttons */
+    transform: scale(1.1);
+}
+
+.home-button .material-symbols-rounded {
+    font-size: 24px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .home-button {
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .home-button .material-symbols-rounded {
+        font-size: 20px;
+    }
+}
+
+/* Fade-in animation for the home button */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-button {
+    animation: fadeIn 0.8s ease-out;
+}
