@@ -13,7 +13,6 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-
 }
 
 .slider-wrapper .slider-item {
@@ -24,7 +23,8 @@
     align-items: center;
 }
 
-.slider-wrapper .slider-item::before {
+/* Images for the inventions page */
+.inventions-slider .slider-item::before {
     position: absolute;
     content: "";
     left: 0;
@@ -36,17 +36,43 @@
     background-position: center;
 }
 
-.slider-wrapper .slider-item:nth-child(2)::before {
+.inventions-slider .slider-item:nth-child(2)::before {
     background-image: url(../Images/invention-page-images/california-commuter-inventions-page.jpg);
 }
 
-.slider-wrapper .slider-item:nth-child(3)::before {
+.inventions-slider .slider-item:nth-child(3)::before {
     background-image: url(../Images/invention-page-images/skytran-inventions-page.jpg);
 }
 
-.slider-wrapper .slider-item:nth-child(4)::before {
+.inventions-slider .slider-item:nth-child(4)::before {
     background-image: url(../Images/invention-page-images/X-2-skycycle-inventions-page.jpg);
 }
+
+/* Images for the books page */
+.books-slider .slider-item::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/book-page-image/fit-at-75-book-cover-book-page-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.books-slider .slider-item:nth-child(2)::before {
+    background-image: url(../Images/book-page-image/clonies-more-fun-than-selfies-book-image.png);
+}
+
+.books-slider .slider-item:nth-child(3)::before {
+    background-image: url(../Images/books-page-images/book3-books-page.jpg);
+}
+
+.books-slider .slider-item:nth-child(4)::before {
+    background-image: url(../Images/books-page-images/book4-books-page.jpg);
+}
+
 .slider-wrapper .slider-item .slide-content {
     opacity: 0;
     color: #fff;
@@ -54,7 +80,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px 10px;
-    max-width: 1400px;
+    max-width: 1400px; 
     position: relative;
 }
 
@@ -159,7 +185,6 @@
     width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
-
 }
 
 .slider-controls .slider-pagination {
@@ -210,7 +235,6 @@
     background: #323235;
 }
 
-
 .slider-navigations button#slide-prev {
     left: 20px;
 }
@@ -223,7 +247,6 @@
     .slider-wrapper .slider-item .slide-content,
     .slider-controls .slider-pagination {
         width: 85%;
-
     }
 }
 
@@ -231,7 +254,6 @@
     .slider-wrapper .slider-item .slide-content,
     .slider-controls .slider-pagination {
         width: 100%;
-
     }
 
     .slider-wrapper .slider-item .slide-content > * {
@@ -252,6 +274,5 @@
 @media (max-width: 768px) {
     .slider-wrapper .slider-item .slide-content > * {
         max-width: 100%;
-
     }
 }

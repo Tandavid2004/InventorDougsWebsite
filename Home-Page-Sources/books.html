@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- When adding more inventions on the slides make sure to add it on the image-slider.css 
+     .slider-wrapper .slider-item:nth-child(4)::before {
+    background-image: url(../Images/invention-page-images/X-2-skycycle-inventions-page.jpg);} make sure to change the 
+    nth-child() to the number of the invention you are adding. Also make sure to add another slider list items for that particular one
+    change the text of the slider list items to the name of the invention and the info.
+    Also add to the slider pagination so it will be clickable to go to the invention that you just added.
+    -->
+    <title>Books By Doug Malewicki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/image-slider.css">
+
+    <!-- Swiper CSS (swiperjs.com)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="slider-container books-slider">
+            <div class="slider-wrapper swiper-wrapper">
+                <!-- Slider List Items -->
+                <div class="slider-item swiper-slide" >
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Slide 01</h3>
+                        <h2 class="slide-title">
+                            FIT AT 75: Unlocking the Secrets to Lifelong Health and Mobility
+                        </h2>
+                        <p class="slide-description">
+                            Why do some people at 75 stay vibrant, active, and drug-free while others struggle with 
+                            mobility and chronic issues? Is it all in the genes, or do lifestyle choices make the 
+                            real difference? Doug Malewicki, a self-proclaimed "geezer," has spent decades unlocking 
+                            the secrets to aging well, proving that staying active is the key to remaining capable. 
+                            From running his age in miles every birthday—most recently 76 miles at 76—to kicking off 
+                            each New Year with a mountain run matching the year's number, Doug embodies his philosophy.
+                            In FIT AT 75, he shares real-life anti-aging strategies, inspiring stories from others who
+                            have defied expectations, and practical, entertaining insights to help anyone make 75 the 
+                            new 50. Packed with humor, visual proof, and simple, actionable tips, this book challenges 
+                            the notion of "normal" aging. If you're ready to take control of how you age, FIT AT 75 is 
+                            your blueprint for a longer, healthier, and more active life!
+                        </p>
+                        <a href="https://www.amazon.com/Fit-At-75-New-Want-ebook/dp/B0106UR0TW/ref=sr_1_1?crid=30RO3J6KG37M5&dib=eyJ2IjoiMSJ9.9E4Uqb_RI3CTjSKnbMH-fVSg_agi4leR0raVnLoV7FVGhPgdiVp0yv6ar4rr68ubm4CosQBXRNSlC4kW4ODS7A.L4NsZuP1PPR-V3RKDTM6T8SojpKpbIfufSbzY1Ea8-Q&dib_tag=se&keywords=douglas+malewicki&qid=1738178129&sprefix=douglamalewicki%2Caps%2C208&sr=8-1" 
+                        target="_blank" 
+                        class="slide-button">Get Yours Here
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Slide 02</h3>
+                        <h2 class="slide-title">
+                            Clonies More Fun than Selfies: A Fun and Instant Photography Technique
+                        </h2>
+                        <p class="slide-description">
+                            CLONIES are captivating, mind-bending snapshots where the same person appears twice 
+                            in a single photo—without any Photoshop manipulation. Using simple yet effective techniques,
+                            this book teaches you how to capture CLONIES instantly, eliminating the need for post-processing.
+                            While thousands, perhaps even hundreds of thousands, have independently experimented with basic 
+                            CLONIE shots using their smartphones, this guide takes you beyond the basics. Chapter 6 introduces 
+                            beginners to fundamental techniques, while Chapters 7-9 reveal advanced tricks for creating truly 
+                            eye-catching and artistic compositions—including SELFIE CLONIES. Best of all, capturing these images 
+                            is an exciting, interactive experience that sparks joy and amazement for everyone involved. Whether 
+                            you're young or old, CLONIES offer a unique way to have fun with photography and unleash your creativity!
+                        </p>
+                        <a href="https://www.amazon.com/CLONIES-SELFIES-Shoot-Perfect-Instantly-ebook/dp/B06XKCFS4D/ref=sr_1_2?crid=1WZ0OW2PCCTSY&dib=eyJ2IjoiMSJ9.9E4Uqb_RI3CTjSKnbMH-fVSg_agi4leR0raVnLoV7FVGhPgdiVp0yv6ar4rr68ub0OttapeDSJvqdZvegx6XHtMN2C7M0PZtFTxp5kyWnsnJ3cqtZ0HDFzNyuNtfbSha2I48m1nDI-BJO3BuM75npQ.-tRx2YS8FTLpKHSNqggkFssYOwIn5fKdJ8LgQoevgw0&dib_tag=se&keywords=douglas+malewicki&qid=1738204176&sprefix=%2Caps%2C95&sr=8-2" 
+                        target="_blank" 
+                        class="slide-button">Get Yours Here
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Pagination -->
+            <div class="slider-controls">
+                <ul class="slider-pagination">
+                    <div class="slider-indicator"></div>
+                    <li class="slider-tab">
+                        Fit at 75
+                    </li>
+                    <li class="slider-tab">
+                        Clonies: More Fun Than Selfies
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="slider-navigations">
+                <button id="slide-prev"
+                class="material-symbols-rounded">arrow_left_alt</button>
+                
+                <button id="slide-next"
+                class="material-symbols-rounded">arrow_right_alt</button>
+
+            </div>
+        </div>
+        <!-- Swiper Script (swiperjs.com)-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            
+        <!-- Using the script.js file to control the slider -->
+        <script src="../scripts/script.js"></script>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
