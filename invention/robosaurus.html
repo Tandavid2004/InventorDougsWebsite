@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multiple Sliders</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/robosaurus-page-slider.css">
+    <link rel="stylesheet" href="../css/responsive-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../css/navigation-bar.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="profile-section">
+                <span class="profile-name">Inventor Doug</span>
+            </div>
     
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a class="nav-link">Pages</a>
+                    <div class="dropdown-content">
+                        <a href="../Home-Page-Sources/about.html">About</a>
+                        <a href="../Home-Page-Sources/invention.html">Inventions</a>
+                        <a href="../Home-Page-Sources/games.html">Board Games</a>
+                        <a href="../Home-Page-Sources/books.html">Books</a>
+                        <a href="../Home-Page-Sources/fitness.html">Fitness</a>
+                    </div>
+                </div>
+    
+                <div class="dropdown">
+                    <a href="mailto:theinventorofthefuture@gmail.com" class="nav-link">Contact Me</a>
+                    <div class="dropdown-content">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dmalewicki@cox.net" target="_blank" class="social-link">
+                            <img src="../Images/Social-Media-Logo/Gmail-Logo.png" alt="Email Me" class="social-icon"> Email Me
+                        </a>
+                        <a href="https://www.facebook.com/DougMalewicki" target="_blank" class="social-link">
+                            <img src="../Images/Social-Media-Logo/facebook.png" alt="Facebook" class="social-icon"> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/geezerdougmalewicki" target="_blank" class="social-link">
+                            <img src="../Images/Social-Media-Logo/Instagram-Logo.png" alt="Instagram" class="social-icon"> Instagram
+                        </a>
+                        <a href="https://twitter.com/ecccar" target="_blank" class="social-link">
+                            <img src="../Images/Social-Media-Logo/X-Logo.jpg" alt="X" class="social-icon"> X
+                        </a>
+                        <a href="https://www.linkedin.com/in/doug-malewicki-7396472" target="_blank" class="social-link">
+                            <img src="../Images/Social-Media-Logo/LinkedIn-Logo.png" alt="LinkedIn" class="social-icon"> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" style="background-color: #001D3D; color: white;">
+
+            <div class="text-image-section">
+                <div class="text-container" >
+                    <h2>The Legend of Robosaurus: From Steel Titan to Auction Star</h2>
+                    <p>
+                        GOING ONCE... GOING TWICE... GONE!<br> 
+                        On January 19, 2008, after 18 thrilling years of jaw-dropping performances, Robosaurus was sold at the legendary 
+                        <a href="https://www.barrett-jackson.com/media/articles/robosaurus-makes-a-giant-impact-a-50-facts-favorite-memories-feature" 
+                        style="color: #FFD700" target="_blank">Barrett-Jackson Auction in Scottsdale</a>,
+                        Arizona. One of the most iconic mechanical beasts to ever grace the arena, this fire-breathing, car-crunching, 58,000-pound monster found a new home—but 
+                        its legacy? That will never be sold.<br><br>
+
+                        Two of Doug's USA Patents are for his Robosaurus invention.  He founded Monster Robots, Inc. and was involved in finding all investors and product sponsors. 
+                        Doug did all the structural design and engineering (loads determinations, weights and stress analysis). Along with all the electronic, hydraulic and control 
+                        system packaging and functional testing.  The creature, which was built in 1.5 years, has been doing shows since 1990.  The most recent NDT (non-destructive-testing) 
+                        inspection of all welded joints was performed at 250,000 miles and showed no weld fatigue degradation.<br><br>
+
+                        One man sitting up in the creature's cranium controls Robosaurus.  Doug had to develop an innovative wearable control system to enable a single pilot
+                        to simultaneously control 18 proportional hydraulic motions.  Each hydraulic valve is controlled by a P-Q Control's Inc. of Bristol, Connecticut 
+                        computer valve board that converts the simple on-off electrical switch signals given by the pilot in the head into proper proportional fluid flow 
+                        rates to the various hydraulic cylinders and pumps.<br><br>
+
+                        Much of the Robosaurus structural design involved tradeoffs to enable transformation to a legal trailer for hauling the 58,000-pound, fire breathing,
+                        beast from show to show.  Robosaurus meets highway size and weight requirements for all 50 States. 
+
+                    </p>
+                </div>
+                <div class="image-container gallery-container">
+                    <button class="nav-button left hidden">&#10094;</button>
+                    <div class="gallery">
+                        <img src="../images/invention-robosaurus-page-image/times-of-sandiego-robosaurus-image.jpg" alt="Image 1">
+                        <img src="../images/invention-robosaurus-page-image/dougs-old-website-main-page-3rd-robosaurus.jpg" alt="Image 2">
+                        <img src="../images/invention-robosaurus-page-image/robosaurus-eating-car.jpg" alt="Image 3">
+                        <img src="../images/invention-robosaurus-page-image/robosaurus-burning-car.jpg" alt="Image 4">
+                        <img src="../images/invention-robosaurus-page-image/robosaurus-eating-plane.jpg" alt="Image 5">
+                    </div>
+                    <button class="nav-button right">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="text-image-section reverse">
+                <div class="text-container">
+                    <h2>More About Robosaurus</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ad odio qui aut vel quidem alias totam aliquid, illum maxime quaerat quibusdam, molestiae asperiores in officiis praesentium, hic reprehenderit maiores?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ad odio qui aut vel quidem alias totam aliquid, illum maxime quaerat quibusdam, molestiae asperiores in officiis praesentium, hic reprehenderit maiores?
+                    </p>
+                </div>
+                <div class="image-container gallery-container">
+                    <button class="nav-button left hidden">&#10094;</button>
+                    <div class="gallery">
+                        <img src="../Images/AeroVisions LOGO.jpg" alt="Image 1">
+                        <img src="../images/book-page-image/clonies-more-fun-than-selfies-book-image.png" alt="Image 2">
+                        <img src="../Images/AeroVisions LOGO.jpg" alt="Image 3">
+                    </div>
+                    <button class="nav-button right">&#10095;</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer>
+            <div class="footer-container">
+                <!-- Copyright -->
+                <div class="footer-copyright">
+                    © 1997-<span id="current-year"></span> Doug Malewicki
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-navigation">
+                    <a href="index.html" style="color: white; text-decoration: none; padding: 5px;">Home</a>
+                    <a href="Home-Page-Sources/about.html" style="color: white; text-decoration: none; padding: 5px;">About</a>
+                    <a href="Home-Page-Sources/invention.html" style="color: white; text-decoration: none; padding: 5px;">Inventions</a>
+                    <a href="Home-Page-Sources/contact.html" style="color: white; text-decoration: none; padding: 5px;">Board Games</a>
+                    <a href="Home-Page-Sources/books.html" style="color: white; text-decoration: none; padding: 5px;">Books</a>
+                    <a href="Home-Page-Sources/fitness.html" style="color: white; text-decoration: none; padding: 5px;">Fitness</a>
+                    <a href="Home-Page-Sources/games.html" style="color: white; text-decoration: none; padding: 5px;">Contact Me</a>
+                </div>
+        
+                <!-- Social Media Links -->
+                <div class="footer-social-media">
+                    <a href="https://www.facebook.com/DougMalewicki" target="_blank" title="Facebook">
+                        <img src="../Images/Social-Media-Logo/facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://www.instagram.com/geezerdougmalewicki" target="_blank" title="Instagram">
+                        <img src="../Images/Social-Media-Logo/Instagram-Logo.png" alt="Instagram" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://twitter.com/ecccar" target="_blank" title="X">
+                        <img src="../Images/Social-Media-Logo/photo-output.jpg" alt="X" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/doug-malewicki-7396472" target="_blank" title="LinkedIn">
+                        <img src="../Images/Social-Media-Logo/LinkedIn-Logo.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dmalewicki@cox.net" target="_blank" title="Email Me">
+                        <img src="../Images/Social-Media-Logo/Gmail-Logo.png" alt="Email Me" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+            </div>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
+        </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../scripts/robosaurus-script.js"></script>
+
+
 </body>
 </html>

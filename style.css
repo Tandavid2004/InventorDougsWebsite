@@ -162,7 +162,7 @@ main {
     gap: 5%;                 /* Add consistent spacing between items */
 }
 
-.footer-container{
+.footer-container {
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -170,14 +170,16 @@ main {
     color: white; 
     background-color: black; 
     font-size: large;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add gap between wrapped elements */
 }
 
-.footer-copyright{
+.footer-copyright {
     flex: 1; 
     text-align: left; 
     padding: 0 20px;
+    min-width: 200px; /* Ensure minimum width for readability */
 }
-
 
 :root {
     --link-color: white;
@@ -186,10 +188,12 @@ main {
 }
 
 .footer-navigation {
-    display: flex; /* Use Flexbox for spacing */
-    justify-content: center; /* Center-align the links */
-    gap: 25px; /* Add a 25px gap between links */
-    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex: 2; /* Give navigation more space */
+    min-width: 300px; /* Ensure minimum width for navigation */
 }
 
 .footer-navigation a {
@@ -197,25 +201,45 @@ main {
     color: var(--link-color);
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevent link text from wrapping */
 }
 
 .footer-navigation a:hover {
     color: var(--link-hover-color);
-    transform: scale(1.05); /* Slight zoom effect for modern touch */
+    transform: scale(1.05);
 }
 
-.footer-social-media{
-    flex: 1; 
-    display: flex; 
-    justify-content: flex-end; 
-    gap: 20px; 
+.footer-social-media {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
     padding: 0 20px;
     flex-wrap: wrap;
-
+    min-width: 200px; /* Ensure minimum width for social media icons */
 }
 
+/* Media query for very small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-copyright,
+    .footer-navigation,
+    .footer-social-media {
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .footer-social-media {
+        justify-content: center;
+    }
+}
 
 /* Style for the right-side image */
 .image-right {

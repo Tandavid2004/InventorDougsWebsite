@@ -1,0 +1,287 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: black; /* Dark gray for a sleek look */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between profile and links */
+    align-items: center;
+    padding: 0 20px; /* Add padding for better spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 80px; /* Increased height for the navbar */
+}
+
+/* Profile section styling */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased space between image and text */
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 60px; /* Increased size for better quality */
+    height: 60px; /* Increased size for better quality */
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensure the image fits well */
+    border: 2px solid #fff; /* Optional: Add a border */
+}
+
+/* Profile name styling */
+.profile-name {
+    font-family: 'Poppins', sans-serif; /* Modern and creative font */
+    font-size: 1.75rem; /* Increased font size */
+    font-weight: 600; /* Bold text */
+    color: white;
+    text-transform: uppercase; /* Uppercase for a modern look */
+    letter-spacing: 1.5px; /* Increased spacing between letters */
+}
+
+/* Group Pages and Contact Me links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between Pages and Contact Me */
+}
+
+/* Navbar links */
+.nav-link {
+    color: white;
+    padding: 1.25rem 1.5rem; /* Increased padding for taller navbar */
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    font-weight: 500; /* Slightly bold for better readability */
+}
+
+.nav-link:hover {
+    background-color: #575757; /* Light gray hover */
+    color: #fff; /* Ensure text stays white */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2C3E50; /* Darker shade for contrast */
+    min-width: 200px; /* Slightly wider for better readability */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for dropdown */
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 8px 8px; /* Rounded corners for dropdown */
+    opacity: 0; /* Start hidden for smooth transition */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in */
+    transform: translateY(-10px); /* Slight upward shift for animation */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 0.75rem 1rem;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Dropdown link hover effect */
+.dropdown-content a:hover {
+    background-color: #34495E; /* Slightly lighter shade for hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down */
+}
+
+/* Social media links styling */
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #34495E; /* Hover effect for social links */
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto; /* Allow height to adjust on mobile */
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .profile-section {
+        justify-content: center; /* Center profile section on mobile */
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .profile-pic {
+        width: 50px; /* Slightly smaller for mobile */
+        height: 50px; /* Slightly smaller for mobile */
+    }
+
+    .profile-name {
+        font-size: 1.5rem; /* Slightly smaller for mobile */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack Pages and Contact Me vertically on mobile */
+        gap: 0; /* Remove gap for stacked layout */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0; /* Remove rounded corners for mobile */
+        opacity: 1; /* Ensure dropdown is visible */
+        transform: none; /* Reset animation */
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block; /* Ensure dropdown stays visible on mobile */
+    }
+}
+
+
+
+
+
+
+/* Footer */
+.footer-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    color: white; 
+    background-color: black; 
+    font-size: large;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add gap between wrapped elements */
+}
+
+.footer-copyright {
+    flex: 1; 
+    text-align: left; 
+    padding: 0 20px;
+    min-width: 200px; /* Ensure minimum width for readability */
+}
+
+:root {
+    --link-color: white;
+    --link-hover-bg: rgba(255, 255, 255, 0.2);
+    --link-hover-color: black;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex: 2; /* Give navigation more space */
+    min-width: 300px; /* Ensure minimum width for navigation */
+}
+
+.footer-navigation a {
+    display: inline-block;
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevent link text from wrapping */
+}
+
+.footer-navigation a:hover {
+    color: var(--link-hover-color);
+    transform: scale(1.05);
+}
+
+.footer-social-media {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    min-width: 200px; /* Ensure minimum width for social media icons */
+}
+
+/* Media query for very small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-copyright,
+    .footer-navigation,
+    .footer-social-media {
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .footer-social-media {
+        justify-content: center;
+    }
+}
+
+/* Style for the right-side image */
+.image-right {
+    flex: 1; /* Allow the image to take up flexible space */
+    max-width: 30%; /* Limit the image to 30% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Style for the left-side text */
+.text-left {
+    flex: 1; /* Allow the text to take up flexible space */
+    font-size: 16px; /* Set a readable font size */
+    line-height: 1.6; /* Improve text readability */
+    text-align: left; /* Align the text to the left */
+}
+
+
+
+
